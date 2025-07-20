@@ -62,4 +62,9 @@ public class scientificCalculator {
            double result = Math.log10(operator1);
            return result;
        }
+
+       public static double calculateAbsolute(double operator1) {
+           double result = Math.abs(operator1);
+           return result;
+       }
 }
