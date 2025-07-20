@@ -4,7 +4,15 @@ import java.util.Scanner;
 public class scientificCalculator {
         public static void main(String args[]) {
             Scanner scanner = new Scanner(System.in);
-            performOperation(scanner);
+            while (true) {
+                performOperation(scanner);
+                System.out.println("D0 you want to perform another operation? ");
+                String answer = scanner.next();
+                if (!answer.equalsIgnoreCase("yes") && !answer.equalsIgnoreCase("y")) {
+                    break;
+                }
+            }
+
 
         }
 
