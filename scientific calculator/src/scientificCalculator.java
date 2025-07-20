@@ -77,4 +77,9 @@ public class scientificCalculator {
            double result = Math.ceil(operator1);
            return result;
        }
+
+       public static  double floorNumber(double operator1) {
+            double result = Math.floor(operator1);
+            return result;
+       }
 }
