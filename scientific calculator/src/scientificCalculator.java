@@ -13,4 +13,10 @@ public class scientificCalculator {
             System.out.println(operator1 + " " + operation + " " + operator2 + " " + "=" + " ");
         }
 
-    }
+        public static double add(double operator1, double operator2) {
+            double result = operator1 + operator2;
+            return result;
+        }
+
+
+}
