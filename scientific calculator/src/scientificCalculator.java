@@ -57,4 +57,9 @@ public class scientificCalculator {
            double result = Math.log(operator1);
            return result;
        }
+
+       public static double calculateLogarithmBase10(double operator1) {
+           double result = Math.log10(operator1);
+           return result;
+       }
 }
