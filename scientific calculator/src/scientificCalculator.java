@@ -72,4 +72,9 @@ public class scientificCalculator {
            long result = Math.round(operator1);
            return result;
        }
+
+       public static double ceiling(double operator1) {
+           double result = Math.ceil(operator1);
+           return result;
+       }
 }
