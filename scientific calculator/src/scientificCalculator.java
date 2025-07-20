@@ -38,5 +38,8 @@ public class scientificCalculator {
            return result;
         }
 
-
+       public static double sinOperation(double operator1) {
+           double result = Math.sin(Math.toRadians(operator1));
+           return result;
+       }
 }
