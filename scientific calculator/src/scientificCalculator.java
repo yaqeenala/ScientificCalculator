@@ -82,4 +82,9 @@ public class scientificCalculator {
             double result = Math.floor(operator1);
             return result;
        }
+
+       public static double findMinNumber(double operator1, double operator2) {
+            double result = Math.min(operator1, operator2);
+            return result;
+       }
 }
