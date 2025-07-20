@@ -87,4 +87,8 @@ public class scientificCalculator {
             double result = Math.min(operator1, operator2);
             return result;
        }
+       public static double findMaxNumber(double operator1, double operator2) {
+           double result = Math.max(operator1, operator2);
+           return result;
+       }
 }
