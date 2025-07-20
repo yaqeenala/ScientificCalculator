@@ -4,13 +4,8 @@ import java.util.Scanner;
 public class scientificCalculator {
         public static void main(String args[]) {
             Scanner scanner = new Scanner(System.in);
-            System.out.println("Enter the first opretor: ");
-            double operator1 = scanner.nextDouble();
-            System.out.println("enter the second operator: ");
-            double operator2 = scanner.nextDouble();
-            dispalyMenu();
-            String operation = scanner.next();
-            System.out.println(operator1 + " " + operation + " " + operator2 + " " + "=" + " ");
+            performOperation(scanner);
+
         }
 
         public static double add(double operator1, double operator2) {
@@ -111,4 +106,88 @@ public class scientificCalculator {
            System.out.println("15. min   Minimum of two numbers");
            System.out.println("16. max   Maximum of two numbers");
        }
+
+       public static void performOperation(Scanner scanner) {
+           System.out.println("Enter the first opretor: ");
+           double operator1 = scanner.nextDouble();
+           System.out.println("enter the second operator: ");
+           double operator2 = scanner.nextDouble();
+           dispalyMenu();
+           String operation = scanner.next();
+
+           switch (operation) {
+               case "+":
+                   System.out.println(operator1 + " " + operation + " " + operator2 + " " + "=" + add(operator1, operator2));
+                   break;
+
+               case "-":
+                   System.out.println(operator1 + " " + operation + " " + operator2 + " " + "=" + subtract(operator1, operator2));
+                   break;
+
+               case "*":
+                   System.out.println(operator1 + " " + operation + " " + operator2 + " " + "=" + multiply(operator1, operator2));
+                   break;
+
+               case "/":
+                   System.out.println(operator1 + " " + operation + " " + operator2 + " " + "=" + divide(operator1, operator2));
+                   break;
+
+               case "^":
+                   System.out.println(operator1 + " " + operation + " " + operator2 + " " + "=" + powerOperation(operator1, operator2));
+                   break;
+
+               case "sin":
+                   System.out.println("sin" + " " + operator1 + " " + "=" + sinOperation(operator1));
+                   break;
+
+               case "cos":
+                   System.out.println("cos" + " " + operator1 + " " + "=" + cosOperation(operator1));
+                   break;
+
+               case "tan":
+                   System.out.println("tan" + " " + operator1 + " " + "=" + tanOperation(operator1));
+                   break;
+
+               case "ln":
+                   System.out.println("ln" + " " + operator1 + " " + "=" + calculateLogarithm(operator1));
+                   break;
+
+               case "log":
+                   System.out.println("log" + operator1 + " " + "=" + calculateLogarithmBase10(operator1));
+                   break;
+
+               case "abs":
+                   System.out.println("abs" + " " + operator1 + " " + "=" + calculateAbsolute(operator1));
+                   break;
+
+               case "round":
+                   System.out.println("round" + " " + operator1 + " " + "=" + roundNumber(operator1));
+                   break;
+
+               case "ceil":
+                   System.out.println("ceil" + " " + operator1 + " " + "=" + ceiling(operator1));
+                   break;
+
+               case "floor":
+                   System.out.println("floor" + " " + operator1 + " " + "=" + floorNumber(operator1));
+                   break;
+
+               case "min":
+                   System.out.println("minimum(" + " " + operator2 + " and " + operator2 + ") " + "=" + findMinNumber(operator1, operator2));
+                   break;
+
+               case "max":
+                   System.out.println("maximum(" + " " + operator2 + " and " + operator2 + ") " + "=" + findMaxNumber(operator1, operator2));
+                   break;
+
+               default:
+                   System.out.println("Incorrect operation. Try again.");
+                   break;
+
+           }
+
+
+       }
+
+
 }
