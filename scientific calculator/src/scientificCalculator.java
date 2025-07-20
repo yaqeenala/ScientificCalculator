@@ -42,4 +42,9 @@ public class scientificCalculator {
            double result = Math.sin(Math.toRadians(operator1));
            return result;
        }
+
+       public static double cosOperation(double operator1) {
+           double result = Math.cos(Math.toRadians(operator1));
+           return result;
+       }
 }
