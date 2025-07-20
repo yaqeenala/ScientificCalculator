@@ -28,5 +28,10 @@ public class scientificCalculator {
            return result;
        }
 
+       public static double divide(double operator1, double operator2) {
+           double result = operator1 / operator2;
+           return result;
+       }
+
 
 }
