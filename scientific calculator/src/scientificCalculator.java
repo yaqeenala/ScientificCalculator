@@ -67,4 +67,9 @@ public class scientificCalculator {
            double result = Math.abs(operator1);
            return result;
        }
+
+       public static long roundNumber(double operator1) {
+           long result = Math.round(operator1);
+           return result;
+       }
 }
