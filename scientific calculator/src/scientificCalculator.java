@@ -47,4 +47,9 @@ public class scientificCalculator {
            double result = Math.cos(Math.toRadians(operator1));
            return result;
        }
+
+       public static double tanOperation(double operator1) {
+           double result = Math.tan(Math.toRadians(operator1));
+           return result;
+       }
 }
