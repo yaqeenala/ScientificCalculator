@@ -189,7 +189,8 @@ public class scientificCalculator {
                    break;
 
                default:
-                   System.out.println("Incorrect operation. Try again.");
+                   System.out.println("Incorrect operation. Try again." );
+                   performOperation(scanner);
                    break;
 
            }
