@@ -8,7 +8,7 @@ public class scientificCalculator {
             double operator1 = scanner.nextDouble();
             System.out.println("enter the second operator: ");
             double operator2 = scanner.nextDouble();
-            System.out.println("Enter an operation: \n1. + \n2. - \n3. * \n4. / \n5. ^ \n6. sin \n7. cos \n8. tan \n9.ln \n10. log base 10 \n11. absolute \n12. round \n13. ceiling \n14. Floor \n15. minimum \n16. Maximum \n17. Display Menu \n18. Helper methods \n19. Exit");
+            dispalyMenu();
             String operation = scanner.next();
             System.out.println(operator1 + " " + operation + " " + operator2 + " " + "=" + " ");
         }
@@ -90,5 +90,25 @@ public class scientificCalculator {
        public static double findMaxNumber(double operator1, double operator2) {
            double result = Math.max(operator1, operator2);
            return result;
+       }
+
+       public static void dispalyMenu() {
+           System.out.println("========== Scientific Calculator Menu ==========");
+           System.out.println("1. +   Addition");
+           System.out.println("2. -   Subtraction");
+           System.out.println("3. *   Multiplication");
+           System.out.println("4. /   Division");
+           System.out.println("5. ^   Power");
+           System.out.println("6. sin   Sine");
+           System.out.println("7. cos   Cosine");
+           System.out.println("8. tan   Tangent");
+           System.out.println("9. ln    Natural Logarithm (base e)");
+           System.out.println("10. log  Logarithm base 10");
+           System.out.println("11. abs  Absolute value");
+           System.out.println("12. round Round the number");
+           System.out.println("13. ceil  Round up");
+           System.out.println("14. floor Round down");
+           System.out.println("15. min   Minimum of two numbers");
+           System.out.println("16. max   Maximum of two numbers");
        }
 }
