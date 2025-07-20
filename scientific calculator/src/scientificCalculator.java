@@ -52,4 +52,9 @@ public class scientificCalculator {
            double result = Math.tan(Math.toRadians(operator1));
            return result;
        }
+
+       public static double calculateLogarithm(double operator1) {
+           double result = Math.log(operator1);
+           return result;
+       }
 }
